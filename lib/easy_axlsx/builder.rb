@@ -1,4 +1,4 @@
-module Abstraxlsx
+module EasyAxlsx
   class Builder
     def self.build
       Building.new

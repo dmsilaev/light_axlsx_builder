@@ -1,4 +1,4 @@
-module Abstraxlsx
+module EasyAxlsx
   class Building
     attr_reader :rel_object_class, :package
 

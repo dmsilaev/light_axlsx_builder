@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'abstraxlsx/version'
+require 'easy_axlsx/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "abstraxlsx"
-  spec.version       = LightAxlsxBuilder::VERSION
+  spec.name          = "easy_axlsx"
+  spec.version       = EasyAxlsx::VERSION
   spec.authors       = ["Dmitry Silaev"]
   spec.email         = ["dmsilaev@yandex.ru"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
