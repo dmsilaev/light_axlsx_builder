@@ -7,10 +7,9 @@ Turn.config do |c|
   # :marshal  - dump output as YAML (normal run mode only)
   # :cue      - interactive testing
   c.format = :pretty
-  # turn on invoke/execute tracing, enable full backtrace
-  c.trace   = true
+  c.trace  = true
+  c.tests << 'test/**{test,}*{,test}.rb'
   # use humanized test names (works only with :outline format)
   # c.natural = true
 end
-
 Turn.run

@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class TestAbstraxlsx < Minitest::Test
+class TestBuilder < Minitest::Test
   def setup
-    @building_object = Abstraxlsx.build
+    @building_object = Abstraxlsx::Builder.build
   end
 
   def test_build_object

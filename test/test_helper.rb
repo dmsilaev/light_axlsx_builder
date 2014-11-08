@@ -14,4 +14,5 @@ if ENV['TRAVIS']
   require 'minitest/autorun'
 else
   require 'minitest_helper'
+  # require 'minitest/autorun'
 end
