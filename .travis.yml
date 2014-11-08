@@ -1,0 +1,7 @@
+language: ruby
+bundler_args: --without profile
+# notifications:
+#   email:
+#     recipients:
+#       - dmsilaev@yandex.com
+#     on_success: always
