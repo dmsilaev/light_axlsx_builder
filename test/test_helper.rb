@@ -11,8 +11,9 @@ Bundler.require
 if ENV['TRAVIS']
   require 'coveralls'
   Coveralls.wear!
-  require 'minitest/autorun'
-else
-  require 'minitest_helper'
-  # require 'minitest/autorun'
 end
+
+require 'minitest/reporters'
+
+Minitest::Reporters.use!
+require 'minitest/autorun'

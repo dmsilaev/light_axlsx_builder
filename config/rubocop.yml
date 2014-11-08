@@ -1,0 +1,13 @@
+Style/AsciiComments:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+Documentation:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  SupportedStyles:
+    - nested
+    - compact
+SingleSpaceBeforeFirstArg:
+  Enabled: false
+

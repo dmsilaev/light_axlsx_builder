@@ -1,11 +1,4 @@
 require 'easy_axlsx/version'
-class Object
-  def eigenclass
-    class << self
-      self
-    end
-  end
-end
 
 module EasyAxlsx
   require 'axlsx'
@@ -14,6 +7,8 @@ module EasyAxlsx
   autoload 'Builder', 'easy_axlsx/builder'
   autoload 'ClassConfig', 'easy_axlsx/class_config'
 
+  # @api public
+  # @return [EasyAxlsx::Building]
   def self.build
     Builder.build
   end

@@ -22,13 +22,10 @@ class ClassTest
   include EasyAxlsx::ClassConfig
 
   def name
-
   end
 
   def last_name
-
   end
 
   as_easy_axlsx_fields :name, :last_name
 end
-
