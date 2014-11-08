@@ -1,5 +1,7 @@
 language: ruby
 bundler_args: --without profile
+rvm:
+  - 2.0.0
 # notifications:
 #   email:
 #     recipients:
