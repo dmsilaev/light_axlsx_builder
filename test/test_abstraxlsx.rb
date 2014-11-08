@@ -2,6 +2,10 @@ require 'test_helper'
 
 class TestLightAxlsxBuilder < Minitest::Test
   def test_build
-    assert(LightAxlsxBuilder.build == 'a')
+    assert(Abstraxlsx.build == 'a')
+  end
+
+  def test_set_object
+
   end
 end
