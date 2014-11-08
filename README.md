@@ -1,31 +1,12 @@
-# Easybuilder::Axlsx
+EasyAxlsx
+======
 
-TODO: Write a gem description
+[![Build Status](https://secure.travis-ci.org/dmsilaev/light_axlsx_builder.png?branch=master)][travis]
+[![Dependency Status](https://gemnasium.com/dmsilaev/light_axlsx_builder.png)][gemnasium]
+[![Code Climate](https://codeclimate.com/github/dmsilaev/light_axlsx_builder.png)][codeclimate]
+[![Coverage Status](https://coveralls.io/repos/dmsilaev/light_axlsx_builder/badge.png?branch=master)][coveralls]
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'easybuilder-axlsx'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install easybuilder-axlsx
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/easybuilder-axlsx/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+[travis]: https://travis-ci.org/dmsilaev/light_axlsx_builder
+[gemnasium]: https://gemnasium.com/dmsilaev/light_axlsx_builder
+[codeclimate]: https://codeclimate.com/github/dmsilaev/light_axlsx_builder
+[coveralls]: https://coveralls.io/r/dmsilaev/light_axlsx_builder
