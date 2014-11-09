@@ -5,6 +5,10 @@ class TestClassConfig < Minitest::Test
     assert(ClassTest.easy_axlsx_fields == [:name, :last_name])
   end
 
+  def test_include_easy_axlsx_field
+    assert(ClassTestSecond.easy_axlsx_fields == [:name, :last_name])
+  end
+
   def test_error_unless_instance_method
     assert_raises NoMethodError do
       self.class.const_set :TestErrorClass, Class.new {
@@ -27,5 +31,22 @@ class ClassTest
   def last_name
   end
 
+  def second_name
+  end
+  as_easy_axlsx_field :second_name
+
   as_easy_axlsx_fields :name, :last_name
 end
+
+class ClassTestSecond
+  include EasyAxlsx::ClassConfig
+
+  def name
+  end
+  as_easy_axlsx_field :name
+
+  def last_name
+  end
+  as_easy_axlsx_field :last_name
+end
+

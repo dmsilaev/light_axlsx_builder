@@ -4,15 +4,27 @@ module EasyAxlsx
 
     module ClassMethods
       def as_easy_axlsx_fields(*args)
-        args.each do |arg|
-          return fail(NoMethodError, "#{arg}", "#{self}") unless instance_methods.include?(arg)
-        end
+        args.each { |arg| easy_axlsx_check_instance_method(arg) }
 
         @easy_axlsx_fields = args
       end
 
+      def as_easy_axlsx_field(arg)
+        easy_axlsx_check_instance_method(arg)
+
+        @easy_axlsx_fields ||= []
+
+        @easy_axlsx_fields << arg
+      end
+
       def easy_axlsx_fields
         Array(@easy_axlsx_fields)
+      end
+
+      private
+
+      def easy_axlsx_check_instance_method(method_name)
+        return fail(NoMethodError, "#{method_name}", "#{self}") unless instance_methods.include?(method_name)
       end
     end
 
