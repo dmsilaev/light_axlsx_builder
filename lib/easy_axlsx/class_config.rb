@@ -1,3 +1,4 @@
+require 'pry'
 module EasyAxlsx
   module ClassConfig
     class EasyAxlsxNoMethodError < NoMethodError; end
@@ -15,12 +16,25 @@ module EasyAxlsx
         @easy_axlsx_fields = easy_axlsx_fields << arg
       end
 
+      # @return [Array] method names, use for generate axlsx rows
+      # @api private
       def easy_axlsx_fields
         Array(@easy_axlsx_fields)
       end
 
+      def as_easy_axlsx_widths(*args)
+        @easy_axlsx_widths = args.map { |arg| Float(arg) }
+      end
+
+      # @return [Array] widths axlsx columns
+      # @api private
+      def easy_axlsx_widths
+        Array(@easy_axlsx_widths)
+      end
+
       private
 
+      # check presence method
       def easy_axlsx_check_instance_method(method_name)
         return fail(NoMethodError, "#{method_name}", "#{self}") unless instance_methods.include?(method_name)
       end

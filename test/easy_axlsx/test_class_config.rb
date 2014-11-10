@@ -18,26 +18,13 @@ class TestClassConfig < Minitest::Test
       }
     end
   end
+
+  def test_include_easy_axlsx_widths
+    assert(ClassTest.easy_axlsx_widths == [1.5, 2.5, 3.5, 4.0])
+  end
 end
 
 # TODO: Вынести тестовые классы из файлов
-
-class ClassTest
-  include EasyAxlsx::ClassConfig
-
-  def name
-  end
-
-  def last_name
-  end
-
-  def second_name
-  end
-  as_easy_axlsx_field :second_name
-
-  as_easy_axlsx_fields :name, :last_name
-end
-
 class ClassTestSecond
   include EasyAxlsx::ClassConfig
 
@@ -49,4 +36,3 @@ class ClassTestSecond
   end
   as_easy_axlsx_field :last_name
 end
-

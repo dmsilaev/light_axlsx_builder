@@ -9,7 +9,7 @@ module EasyAxlsx
 
   # @api public
   # @return [EasyAxlsx::Building]
-  def self.build
-    Builder.build
+  def self.build(objects)
+    Builder.build(objects)
   end
 end
