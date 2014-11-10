@@ -12,9 +12,7 @@ module EasyAxlsx
       def as_easy_axlsx_field(arg)
         easy_axlsx_check_instance_method(arg)
 
-        @easy_axlsx_fields ||= []
-
-        @easy_axlsx_fields << arg
+        @easy_axlsx_fields = easy_axlsx_fields << arg
       end
 
       def easy_axlsx_fields
