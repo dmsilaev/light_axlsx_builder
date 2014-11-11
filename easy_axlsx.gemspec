@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = EasyAxlsx::VERSION
   spec.authors       = ['Dmitry Silaev']
   spec.email         = ['dmsilaev@yandex.ru']
-  spec.summary       = 'TODO: Write a short summary. Required.'
-  spec.description   = 'TODO: Write a longer description. Optional.'
+  spec.summary       = 'Generate axlsx object of an any class'
+  spec.description   = 'Generate axlsx object of an any class. After you can generate xlsx file, or change axslx object.'
   spec.homepage      = ''
   spec.license       = 'MIT'
 
